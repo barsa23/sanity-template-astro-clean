@@ -21,8 +21,7 @@ import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
 import { schemaTypes } from "./schema";
-import { dashboardTool } from "@sanity/dashboard";
-import { vercelWidget } from "sanity-plugin-dashboard-widget-vercel";
+
 
 export default defineConfig({
   name: "project-name",
@@ -30,12 +29,8 @@ export default defineConfig({
   projectId: "ujas126k",
     dataset: "production",
   plugins: [deskTool(), visionTool(),
-    dashboardTool({
-      widgets: [
-        vercelWidget(),
-      ],
-  }
-),],
+    
+     ],
   schema: {
     types: schemaTypes,
   },
