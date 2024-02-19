@@ -15,7 +15,7 @@ const { post } = Astro.props;
     post.mainImage ? (
       <img
         class="card__cover"
-        src={urlFor(post.mainImage).width(231).height(170).url()}
+        src={urlFor(post.mainImage).url()}
         alt="Cover image"
       />
     ) : (
@@ -55,14 +55,14 @@ const { post } = Astro.props;
 
     & .card__cover {
       width: 230px;
-      height: 150px;
+      height: 180px;
       
       object-fit: cover;
     }
 
     & .card__cover--none {
       width: 230px;
-      height: 150px;
+      height: 180px;
       background: var(--black);
     }
 
@@ -124,7 +124,7 @@ const { post } = Astro.props;
     display: flex;
     flex-direction: row;
     /* padding: var(--space-2); */
-    padding: 20px;
+    padding: 10px;
     position: relative;
     margin-bottom: 100px;
     /* border-bottom: 1px solid #ced2d9; */
@@ -137,7 +137,7 @@ const { post } = Astro.props;
 
     & .card__cover {
       width: 230px;
-      height: 150px;
+      height: 180px;
       
       object-fit: cover;
     }
@@ -145,7 +145,7 @@ const { post } = Astro.props;
     & .card__cover--none {
       width: 230px;
       /* height: 231px; */
-      height: 150px;
+      height: 180px;
       background: var(--black);
     }
 
@@ -180,8 +180,8 @@ const { post } = Astro.props;
 
   @media (min-width: 800px) {
     .card {
-      flex-direction: row;
-      padding: 10px;
+      flex-direction: column;
+      padding: 20px;
       
 
       & .card__container {
