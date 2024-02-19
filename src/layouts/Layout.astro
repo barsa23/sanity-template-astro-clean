@@ -54,7 +54,7 @@ const { title } = Astro.props;
           >Laura Locura </a>
         
       </header>
-      <p style="font-size: 20px; margin-top: -20px ; margin-bottom: 50px;">un blog sobre Laura Locura</p>
+      <p style="font-size: 12px; margin-top: -20px ; margin-bottom: 50px; ">un blog sobre Laura Locura</p>
       <main>
         <slot />
       </main>
@@ -83,7 +83,8 @@ const { title } = Astro.props;
 <style>
   .container {
     margin: 0 auto;
-    width: 80ch;
+    width: 90%;
+    border: 1px solid #000000;
   }
 
   main {
@@ -93,7 +94,8 @@ const { title } = Astro.props;
   .header {
     display: flex;
     padding: 0 var(--space-1);
-    border-bottom: 1px solid #ced2d9;
+    
+    
 
     z-index: 10;
     background: var(--special-green);
@@ -103,11 +105,11 @@ const { title } = Astro.props;
     top: 0;
 
     & .header__title {
-      font-weight: 600;
-      font-size: var(--font-size-3);
+      font-weight: 300;
+      font-size: var(--font-size-5);
       line-height: var(--line-height-1);
       
-      margin: var(--space-3) 0;
+      margin: var(--space-1) 0;
       text-decoration: none;
       color: var(--white);
     }
@@ -129,8 +131,9 @@ const { title } = Astro.props;
 
   @media (min-width: 575px) {
     .container {
-      max-width: 80ch;
+      max-width: 90ch;
       padding: 0 var(--space-2);
+      border: 1px solid #f10000;
     }
 
     main {
