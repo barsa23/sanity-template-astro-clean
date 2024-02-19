@@ -27,8 +27,8 @@ import { vercelWidget } from "sanity-plugin-dashboard-widget-vercel";
 export default defineConfig({
   name: "project-name",
   title: "Project Name",
-  projectId,
-  dataset,
+  projectId: "ujas126k",
+    dataset: "production",
   plugins: [deskTool(), visionTool(),
     dashboardTool({
       widgets: [
