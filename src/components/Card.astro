@@ -45,7 +45,8 @@ const { post } = Astro.props;
     padding: var(--space-2);
     padding: 9px;
     position: relative;
-    border-bottom: 1px solid #ced2d9;
+    margin-bottom: 100px;
+    /* border-bottom: 1px solid #ced2d9; */
 
     & .card__container {
       margin: 0 var(--space-1) 0;
@@ -53,21 +54,23 @@ const { post } = Astro.props;
 
     & .card__cover {
       width: 100%;
-      height: 231px;
+      height: 300px;
+      
       object-fit: cover;
     }
 
     & .card__cover--none {
       width: 100%;
-      height: 231px;
+      /* height: 231px; */
+      height: 300px;
       background: var(--black);
     }
 
     & .card__title {
       font-family: var(--font-family-sans);
       font-weight: 800;
-      font-size: var(--font-size-7);
-      line-height: var(--line-height-6);
+      font-size: var(--font-size-9);
+      line-height: var(--line-height-9);
       letter-spacing: -0.025em;
       margin: var(--space-3) 0;
     }
@@ -75,9 +78,11 @@ const { post } = Astro.props;
     & .card__excerpt {
       font-family: var(--font-family-serif);
       font-weight: 400;
-      font-size: var(--font-size-4);
-      line-height: var(--line-height-3);
+      font-size: var(--font-size-2);
+      line-height: var(--line-height-1);
       margin-top: 0;
+      color: yellow;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     & .card__date {
@@ -116,15 +121,15 @@ const { post } = Astro.props;
 
   @media (min-width: 575px) {
     .card {
-      border: 1px solid #ced2d9;
-      border-bottom: none;
+      /* border: 1px solid #ced2d9;
+      border-bottom: none; */
 
       & .card__title {
         margin-top: var(--space-4);
       }
 
       &:last-child {
-        border-bottom: 1px solid #ced2d9;
+        /* border-bottom: 1px solid #ced2d9; */
       }
     }
   }
@@ -141,7 +146,7 @@ const { post } = Astro.props;
       & .card__cover--none {
         min-width: 366.5px;
         max-width: 366.5px;
-        max-height: 231px;
+        max-height: 366px;
       }
     }
   }
