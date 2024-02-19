@@ -15,7 +15,7 @@ const { post } = Astro.props;
     post.mainImage ? (
       <img
         class="card__cover"
-        src={urlFor(post.mainImage).url()}
+        src={urlFor(post.mainImage).width(230).height(180).url()}
         alt="Cover image"
       />
     ) : (
@@ -180,7 +180,7 @@ const { post } = Astro.props;
 
   @media (min-width: 800px) {
     .card {
-      flex-direction: column;
+      flex-direction: row;
       padding: 20px;
       
 
@@ -191,9 +191,9 @@ const { post } = Astro.props;
 
       & .card__cover,
       & .card__cover--none {
-        min-width: 366.5px;
-        max-width: 366.5px;
-        max-height: 231px;
+        min-width: 650px;
+        max-width: 650px;
+        max-height: 400px;
       }
     }
   }
