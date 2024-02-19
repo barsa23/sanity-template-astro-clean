@@ -1,4 +1,4 @@
-// Different environments use different variables
+/* // Different environments use different variables
 const projectId =
   import.meta.env.PUBLIC_SANITY_STUDIO_PROJECT_ID! ||
   import.meta.env.PUBLIC_SANITY_PROJECT_ID!;
@@ -15,7 +15,7 @@ if (!projectId || !dataset) {
       2
     )}`
   );
-}
+} */
 
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
