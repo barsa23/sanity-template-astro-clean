@@ -132,7 +132,8 @@ const { post } = Astro.props;
      border: 1px solid #000000;
 
     & .card__container {
-      margin: 0 var(--space-1) 0;
+      margin: 0 var(--space-3) 0;
+      border: 1px dotted blue;
     }
 
     & .card__cover {
@@ -206,9 +207,11 @@ const { post } = Astro.props;
     .card {
       flex-direction: row;
       padding: 10px;
+      
 
       & .card__container {
         margin: 0 var(--space-4) 0;
+        
       }
 
       & .card__cover,
