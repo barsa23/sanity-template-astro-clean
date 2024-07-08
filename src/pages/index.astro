@@ -10,7 +10,7 @@ const posts = await getPosts();
 
 <Layout title="Welcome to Laura Locura.">
   <section>
-    <div class="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
+    <div class=" py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
       <div class="grid grid-cols-1 text-sm font-medium text-gray-500 gap-x-2 gap-y-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-16 text-balance">
     {posts.length ? posts.map((post) => <Cardmain post={post} />) : <Welcome />}
       </div>
