@@ -54,7 +54,7 @@ const { title } = Astro.props;
           >Laura Locura </a>
         
       </header>
-      <p style="font-size: 12px; margin-top: -20px ; margin-bottom: 50px; ">un blog sobre Laura Locura</p>
+      <p style="font-size: 12px;  ">un blog sobre Laura Locura</p>
       <main>
         <slot />
       </main>
@@ -93,23 +93,20 @@ const { title } = Astro.props;
 
   .header {
     display: flex;
-    padding: 0 var(--space-1);
+    
     
     
 
     z-index: 10;
     background: var(--special-green);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
+
 
     & .header__title {
       font-weight: 300;
       font-size: var(--font-size-5);
       line-height: var(--line-height-1);
       
-      margin: var(--space-1) 0;
+      margin:  0;
       text-decoration: none;
       color: var(--white);
     }
@@ -132,7 +129,7 @@ const { title } = Astro.props;
   @media (min-width: 575px) {
     .container {
       max-width: 90%;
-      padding: 0 var(--space-2);
+      padding: 0 20px;
       border: 1px solid #f10000;
     }
 
@@ -143,12 +140,12 @@ const { title } = Astro.props;
     .header {
       position: unset;
       border-bottom: none;
-      margin: var(--space-3) 0;
-      padding: var(--space-2) 0;
+    
+     
       background: unset;
 
       & .header__title {
-        margin: var(--space-3) 0 var(--space-2);
+        
         font-size: var(--font-size-5);
       }
     }
@@ -224,6 +221,12 @@ const { title } = Astro.props;
   }
 
   body {
-    margin: 0;
+    margin: auto;
+	padding: 2px;
+	max-width: 94%;
+	text-align: left;
+	background-color: #240c1a;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
   }
 </style>
