@@ -17,7 +17,7 @@ const { post } = Astro.props;
 {
     post.mainImage ? (
       <img
-        class="absolute inset-0 h-full w-50 rounded-2xl aspect-square object-cover  duration-500 group-hover:scale-105 opacity-95 transition-opacity group-hover:opacity-50"
+        class="absolute inset-0 h-full w-50 rounded-2xl aspect-square object-cover  opacity-95 transition-opacity group-hover:opacity-50"
         src={urlFor(post.mainImage).width(230).height(180).url()}
         alt="Cover image"
       />
