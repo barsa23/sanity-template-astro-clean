@@ -24,7 +24,7 @@ const post = await getPost(slug);
     {
       post.mainImage ? (
         <img
-          class="post__cover mx-auto size-full min-h-[600px] aspect-video rounded-2xl p-10"
+          class="post__cover mx-auto  container object-cover w-[600px] rounded-2xl p-10"
           src={urlFor(post.mainImage).url()}
           alt="Cover image"
         />
